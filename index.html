@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Basic </title>
+    <link rel="stylesheet" href="../node_modules//bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/Zomato-Clone/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/Zomato-Clone/script/index.js"></script>
+</head>
+<body class="container-fluid">
+    <header>
+        <div class="bg-danger d-flex flex-wrap">
+            <div>
+                <img src="../public/Image/Zomato_logo.png"  width="80" height="70" alt="Zomato_logo">
+            </div>
+            <div class="mt-4 ms-4" id="welcome">
+                <marquee direction="right" >Welcome to zomato food sevices</marquee>
+            </div>
+        </div>
+        <div class="text-center p-2 head">
+            <p id="statusForCustomer"> Waiting for restaurant response</p>
+            <div id="showMsg" class="d-flex flex-wrap justify-content-center mt-3">
+                <span class="border border-1 bg-success p-2 text-white">Ontime</span>
+                <span id="arriving" class="ms-3 border border-1 p-2 bg-success text-white">Arriving 25 minutes</span>
+            </div>
+        </div>
+    </header>
+    <section class="mt-2">
+        <nav>
+            <img src="../public/Image/google_map_image.png" id="map" style="opacity: 0.5;" width="100%" height="480px" alt="map_view">
+        </nav>
+        <main class="mt-3">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div>
+                    <img src="../public/Image/delivery_boy.png" width="60" height="60" alt="">
+                </div>
+                <div id="status" class="ms-3 mt-3">
+                    <p>Waiting for restaurant response.....</p>
+                </div>
+                <div id="valet-status" class="ms-3">
+                    <span class="valet-status-1">Hii.. this is Bhanu i'm your valet</span>
+                    <p>I'm confortable with english and hindi language</p>
+                </div>
+                <div class="justify-content-end ms-xl-5">
+                    <p id="call" class="bi-telephone-outbound-fill"></p>
+                </div>
+            </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-center mb-3 mt-3">
+            <button id="acceptOrder" class="btn btn-danger mt-2">Ask Restaurant for accept order</button>
+            <button id="findValets" class="btn btn-warning ms-3 mt-2">Find Valets</button>
+            <button id="orderDelivered" class="btn btn-primary ms-3 mt-2">Order Delivered</button>
+        </footer>
+    </section>
+</body>
+</html>

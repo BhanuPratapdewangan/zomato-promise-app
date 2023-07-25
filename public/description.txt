@@ -1,0 +1,25 @@
+
+
+Before order 
+============
+- User add/remove items to cart
+- Checkout carts => Generate Bill
+- Apply coupon
+- Select address
+- Payment Way
+- Complete payment and place order
+
+
+After order
+===========
+- Order sent to restaurant -> Wait for restaurant response
+- Restaurant accept -> Start preparing
+- Restaurant reject -> Payment return
+- Start preparing -> Search for nearby delivery boy
+- Assign delivery boy with same delivery path and less distance
+- Check have picked up after every 1 minute -> If food is prepare then pickup order from restaurant by delivery boy
+- If not picked up -> Update estimated time
+- If picked up -> Get estimated order delivery time from map -> update time
+- Update delivery location on map and time after 1 minute to show current location
+- Ordered delivered to customer.
+- Give feedback and rating for order item.
